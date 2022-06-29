@@ -45,10 +45,10 @@ export default function PrivatePage(props) {
       images: images,
       gifWidth: width,
       gifHeight: height,
-      numWorkers: 2,
-      frameDuration: speed,
-      sampleInterval: 10,
-      numFrames: 10,
+      numWorkers: 20,
+      interval: 0.1 + 0.05 * speed,
+      sampleInterval: 1,
+      numFrames: 1,
       progressCallback: e => setProgress(parseInt(e * 100))
     };
 
